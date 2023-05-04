@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title></title>
+
+</head>
+<body style="background-color: lightblue;">
+<p id="today"></p>
+<h1 align="center">Fahrenheit to Celsius</h1>
+
+        <div>
+        <form>
+        	<h1>°F</h1>
+        	<h2>Melting Point of Iron in °F</h2>
+        	<h2 id="FAHRENHEIT">2800 °F</h2>
+        	<h2>Melting Point of Gold in °F</h2>
+        	<h2 id="fahrenheit">1947.5 °F</h2>
+        	<h2>Melting Point of Copper in °F</h2>
+        	<h2 id="Fahrenheit">1983 °F</h2>
+        	<h2>Melting Point of Silver in °F</h2>
+        	<h2 id="fahrenheiT">1761  °F</h2>
+        </form>
+        <hr>
+        <form style="background-color: red;">
+        	<h1 style="color: beige;">°C</h1>
+        	<h2 style="color: beige;">Melting Point of Iron in °C</h2>
+        	<h2 style="color: beige;" id="FAHRENHEIT">1538 °F</h2>
+        	<h2 style="color: beige;">Melting Point of Gold in °C</h2>
+        	<h2 style="color: beige;" style="color: beige;" id="fahrenheit">1064 °C</h2>
+        	<h2 style="color: beige;">Melting Point of Copper in °C</h2>
+        	<h2 style="color: beige;" id="Fahrenheit">1084 °F</h2>
+        	<h2 style="color: beige;">Melting Point of Silver in °C</h2>
+        	<h2 style="color: beige;" id="fahrenheiT">961 °F</h2>
+        </form>
+        <button style="background-color: red;" onclick="function Compute()">Calculate</button>
+        </div>
+
+
+
+
+
+
+
+<script>
+	const date = new Date()
+	document.getElementById("today").innerHTML = date;
+</script>
+<script>
+	function Compute() {
+	var FAHRENHEIT = document.getElementById("FAHRENHEIT").innerHTML;
+	var fahrenheit = document.getElementById("fahrenheit").innerHTML;
+	var Fahrenheit = document.getElementById("Fahrenheit").innerHTML;
+	var fahrenheiT = document.getElementById("fahrenheiT").innerHTML;
+    let CELSIUS = (FAHRENHEIT - 32) * 5/9;
+    let celsius = (fahrenheit - 32) * 5/9;
+    let Celsius = (Fahrenheit - 32) * 5/9;
+    let celsiuS = (fahrenheiT - 32) * 5/9;
+    window.alert(Melting Point of Iron °C + "CELSIUS" + "\n" + Melting Point of Gold °C + "celsius" + "\n" + Melting Point of Copper °C + "Celsius" + "\n" + Melting Point of Silver °C + "celsiuS").innerHTML;
+}
+</script>
+
+
+</body>
+</html>
